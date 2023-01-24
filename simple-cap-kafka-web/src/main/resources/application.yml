@@ -1,0 +1,29 @@
+server:
+  port: 9080
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    security:
+      protocol: PLAINTEXT
+    consumer:
+      client-id: cap-consumer-client
+      auto-offset-reset: latest
+      group-id: cap-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      properties:
+        '[spring.json.trusted.packages]': com.farhad.example.*
+    producer:
+      client-id: cap-producer-client
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      properties: 
+        '[spring.json.trusted.packages]': com.farhad.example.*
+        
+kafka:
+  topic:
+    request: cap-request-topic
+    reply: cap-reply-topic
+  request-reply:
+    timeout-ms: 1000
