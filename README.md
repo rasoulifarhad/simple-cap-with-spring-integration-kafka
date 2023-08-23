@@ -1,18 +1,18 @@
 ##  Run 
 
-1. Run Kafka
+1. **Run Kafka**
 
 ```
 Go to `docker` folder then run `docker compose up -d`
 ```
 
-2. Run app(	web)
+2. **Run app(web)**
 
 ```
 Go to  `simple-cap-kafka-web` folder and run `./mvnw spring-boot:run`
 ```
 
-3. Test with curl
+3. **Test with curl**
 
 ```
 curl -s -X POST -H 'Content-Type: application/json' -d 'test' -w "\n"  http://localhost:9080/api/cap
@@ -32,7 +32,7 @@ curl --header "Content-Type: application/json" \
     *                     DOCs                      *
     *************************************************
 
-I. Sample Problem
+## Sample Problem
     
       Capitalize a given string.
     
@@ -44,7 +44,7 @@ I. Sample Problem
     
        "Farhad"
 
-II. Architecture
+## Architecture
 
        Since scalability is a core goal of any System, it's usually better to design small stages focused 
        on specific operations, especially if we have I/O─intensive tasks. 
