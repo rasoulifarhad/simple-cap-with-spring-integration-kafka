@@ -40,12 +40,12 @@ curl --header "Content-Type: application/json" \
 
 ## Architecture
 
-       Since scalability is a core goal of any System, it's usually better to design small stages focused 
-       on specific operations, especially if we have I/O─intensive tasks. 
+Since scalability is a core goal of any System, it's usually better to design small stages focused 
+on specific operations, especially if we have I/O─intensive tasks. 
 
-       Moreover, having small stages helps us better tune the scale of each stage.
+Moreover, having small stages helps us better tune the scale of each stage.
 
-       To solve our Capitalize word problem, we can implement a solution with the following stages:
+To solve our Capitalize word problem, we can implement a solution with the following stages:
 
 
 ``` 
