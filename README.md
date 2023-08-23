@@ -28,17 +28,15 @@ curl --header "Content-Type: application/json" \
             http://localhost:9080/api/cap
 ```
 
-## Sample Problem
-    
-      Capitalize a given string.
-    
-      Given the input:
-       
-       "farhad"
-       
-      The output will be:
-    
-       "Farhad"
+## Sample Problem (Capitalize a given string.)
+
+> Given the input:
+
+>> "farhad"
+
+> The output will be:
+
+>> "Farhad"
 
 ## Architecture
 
