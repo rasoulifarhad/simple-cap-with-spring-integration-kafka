@@ -28,10 +28,6 @@ curl --header "Content-Type: application/json" \
             http://localhost:9080/api/cap
 ```
 
-    *************************************************
-    *                     DOCs                      *
-    *************************************************
-
 ## Sample Problem
     
       Capitalize a given string.
