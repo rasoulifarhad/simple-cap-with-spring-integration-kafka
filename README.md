@@ -1,4 +1,4 @@
-##  Run 
+###  Run 
 
 1. **Run Kafka**
 
@@ -28,7 +28,7 @@ curl --header "Content-Type: application/json" \
             http://localhost:9080/api/cap
 ```
 
-## Sample Problem (Capitalize a given string.)
+### Sample Problem (Capitalize a given string.)
 
 > Given the input:
 
@@ -38,7 +38,7 @@ curl --header "Content-Type: application/json" \
 
 >> "Farhad"
 
-## Architecture
+### Architecture
 
 Since scalability is a core goal of any System, it's usually better to design small stages focused 
 on specific operations, especially if we have I/O─intensive tasks. 
