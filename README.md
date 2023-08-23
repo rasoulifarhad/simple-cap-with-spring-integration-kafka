@@ -1,24 +1,32 @@
 ##  Run 
 
- 1. Run Kafka
+1. Run Kafka
 
-      Go to `docker` folder then run `docker compose up -d` 
+```
+Go to `docker` folder then run `docker compose up -d`
+```
 
 2. Run app(	web)
 
-      Go to  `simple-cap-kafka-web` folder and run `./mvnw spring-boot:run`
+```
+Go to  `simple-cap-kafka-web` folder and run `./mvnw spring-boot:run`
+```
 
 3. Test with curl
 
-      curl -s -X POST -H 'Content-Type: application/json' -d 'test' -w "\n"  http://localhost:9080/api/cap
+```
+curl -s -X POST -H 'Content-Type: application/json' -d 'test' -w "\n"  http://localhost:9080/api/cap
+```
 
-      OR
+OR
 
-      curl --header "Content-Type: application/json" \
+```
+curl --header "Content-Type: application/json" \
            --request POST \
            --data 'test' \
            -w "\n" \
             http://localhost:9080/api/cap
+```
 
     *************************************************
     *                     DOCs                      *
